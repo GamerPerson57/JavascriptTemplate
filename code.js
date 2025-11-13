@@ -19,4 +19,5 @@ let toolbox = new Toolbox();
 // let shuffled = toolbox.shuffleArray(myFavoriteLetters);
 // console.log(shuffled);
 
-getRandomColor(pencil);
+// pencil.fillstyle = toolbox.getRandomColor();
+// pencil.fillRect = (50, 50, 100, 100);

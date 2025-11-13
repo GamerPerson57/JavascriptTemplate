@@ -27,15 +27,18 @@ export class Toolbox {
         return shuffled;
     }
 
-    getRandomColor(pencil) {
-        hexDigits = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9',
-                     'A', 'B', 'C', 'D', 'E', 'F'];
+    getRandomColor() {
         let color = '#';
+        let hexDigits = [
+                    '0', '1', '2', '3', 
+                    '4', '5', '6', '7', 
+                    '8', '9','A', 'B', 
+                    'C', 'D', 'E', 'F'
+                ];
         for (let i = 0; i < 6; i++) {
-            color += hexDigits[Math.floor(Math.random() * hexDigits.length)];
+            color += this.getRandomItem(hexDigits);
         }
-        
-        pencil.fillStyle = color;
+
         return color;
 
     }
